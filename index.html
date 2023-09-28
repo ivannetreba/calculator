@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <section class="calculator-area">
+    <p class="calcDisplay">0</p>
+    <div class="calculator-row">
+      <button onclick="displayCalc(`1`);">1</button>
+      <button onclick="displayCalc(`2`);">2</button>
+      <button onclick="displayCalc(`3`);">3</button>
+      <button onclick="displayCalc(`+`);" class="button--light">+</button>
+    </div><br>
+    <div class="calculator-row">
+      <button onclick="displayCalc(`4`);">4</button>
+      <button onclick="displayCalc(`5`);">5</button>
+      <button onclick="displayCalc(`6`);">6</button>
+      <button onclick="displayCalc(`-`);" class="button--light">-</button>
+    </div><br>
+    <div class="calculator-row">
+      <button onclick="displayCalc(`7`);">7</button>
+      <button onclick="displayCalc(`8`);">8</button>
+      <button onclick="displayCalc(`9`);">9</button>
+      <button onclick="displayCalc(`*`);" class="button--light">*</button>
+    </div><br>
+    <div class="calculator-row">
+      <button onclick="displayCalc(`0`);">0</button>
+      <button onclick="displayCalc(`.`);">.</button>
+      <button onclick="displayCalc(`=`);">=</button>
+      <button onclick="displayCalc(`/`);" class="button--light">/</button>
+    </div><br>
+    <div>
+      <button onclick="displayCalc(`Clear`);" class="btn-clear">Clear</button>
+    </div>
+  </section>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
+

@@ -31,12 +31,20 @@ button {
   text-align: center;
 }
 
+button:hover {
+  opacity: 80%;
+}
+
 .btn-clear {
   width: 130px;
 }
 
 .button--light {
   background: #d58413;
+}
+
+.button--light:hover {
+  opacity: 80%;
 }
 
 p {

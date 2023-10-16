@@ -1,10 +1,19 @@
 let calculation = localStorage.getItem('calculation') || '';
-
 const calcDisplay = document.querySelector('.calcDisplay');
- 
+const validKeys = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '+', '-', '/', '*', '.', '=', '/'];
+
 if (localStorage.getItem('calculation')) {
   displayCalculation(calculation);
 } 
+
+
+document.body.addEventListener('keydown', (event) => {
+  if (event.key === ' ') {
+    displayCalc('Clear');
+  } else if (validKeys.includes(event.key)) {
+    displayCalc(event.key);
+  }
+})
 
 
 function displayCalc(addition) {
